@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "node ./node_modules/.bin/webpack --config webpack.config.js"
+    "start": "node ./node_modules/.bin/webpack"
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0"
