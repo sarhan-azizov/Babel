@@ -1,0 +1,1 @@
+export { default as WithObjectAssign } from './component';

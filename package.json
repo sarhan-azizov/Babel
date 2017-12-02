@@ -1,0 +1,23 @@
+{
+  "name": "babel-env",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node ./node_modules/.bin/webpack"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.32",
+    "@babel/preset-env": "^7.0.0-beta.32",
+    "@babel/preset-react": "^7.0.0-beta.33",
+    "babel-loader": "8.0.0-beta.0",
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": "^3.8.1"
+  },
+  "private": true
+}
