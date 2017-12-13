@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { WithObjectAssign } from './test-components';
+import { WithObjectAssign, WithMemoryLeak } from './test-components';
 
 const App = () => (
-    <WithObjectAssign />
+    [<WithObjectAssign key="1" />, <WithMemoryLeak key="2" />]
 );
 
 
