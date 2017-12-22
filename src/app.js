@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { WithObjectAssign } from './test-components';
+import { Blockly } from './features';
 
 const App = () => (
-    <WithObjectAssign />
+    <Blockly id="sarhan" />
 );
 
 

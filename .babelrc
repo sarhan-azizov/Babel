@@ -5,7 +5,7 @@
       "targets": {
         "chrome": 35
       },
-      "debug": true,
+      //"debug": true,
       "useBuiltIns": "usage"
     }]
   ]
