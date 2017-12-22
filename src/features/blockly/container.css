@@ -1,0 +1,21 @@
+.select-task {
+    z-index: 100;
+    background: white;
+    box-shadow: 1px 1px 5px #aaa;
+    position: absolute;
+    margin: 0;
+    list-style: none;
+    width: 200px;
+    padding: 0;
+    border-radius: 3px;
+    overflow: hidden;
+}
+
+.select-task li {
+    padding: 5px 10px;
+}
+
+.select-task li:hover {
+    background: #85dcf1;
+    cursor: pointer;
+}
