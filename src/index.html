@@ -6,67 +6,42 @@
 </head>
 <body>
 <xml style="display: none" id="toolbox">
-    <block type="run_task"></block>
     <block type="controls_if"></block>
-    <block type="logic_compare"></block>
-    <block type="logic_operation"></block>
-    <block type="logic_negate"></block>
-    <block type="logic_boolean"></block>
-    <block type="math_number"></block>
-    <block type="math_arithmetic"></block>
-    <block type="math_single"></block>
-    <block type="text"></block>
-    <block type="text_length"></block>
-    <block type="text_print"></block>
+    <block type="run_task_condition"></block>
+    <block type="run_task"></block>
+    <block type="run_task_and_or"></block>
 </xml>
 <xml style="display: none" id="example">
-    <block type="controls_if" inline="false" x="20" y="20">
+    <variables></variables>
+    <block type="controls_if" id="gbi?|h:{%f0j;M{cI$O^" x="-559" y="199">
         <mutation else="1"></mutation>
         <value name="IF0">
-            <block type="logic_compare" inline="true">
-                <field name="OP">EQ</field>
-                <value name="A">
-                    <block type="math_arithmetic" inline="true">
-                        <field name="OP">MULTIPLY</field>
-                        <value name="A">
-                            <block type="math_number">
-                                <field name="NUM">6</field>
+            <block type="run_task_condition" id="{.zoTn(_%jhC2$n{*1!5" editable="false">
+                <field name="run_task_dropdown">1</field>
+                <value name="run_task_input">
+                    <block type="run_task_and_or" id="l$9R[,Mo5Vc1JI*JO7g%">
+                        <field name="dropdown_and_or">and</field>
+                        <value name="run_task_and_or">
+                            <block type="run_task_condition" id="hp4A.tM.*){7MlRZ~yWL" editable="false">
+                                <field name="run_task_dropdown">2</field>
                             </block>
                         </value>
-                        <value name="B">
-                            <block type="math_number">
-                                <field name="NUM">7</field>
-                            </block>
-                        </value>
-                    </block>
-                </value>
-                <value name="B">
-                    <block type="math_number">
-                        <field name="NUM">42</field>
                     </block>
                 </value>
             </block>
         </value>
         <statement name="DO0">
-            <block type="text_print" inline="false">
-                <value name="TEXT">
-                    <block type="text">
-                        <field name="TEXT">Don't panic</field>
-                    </block>
-                </value>
+            <block type="run_task" id="t7AeINeuLp#+CjwY%8ah" editable="false">
+                <field name="run_task_dropdown">3</field>
             </block>
         </statement>
         <statement name="ELSE">
-            <block type="text_print" inline="false">
-                <value name="TEXT">
-                    <block type="text">
-                        <field name="TEXT">Panic</field>
-                    </block>
-                </value>
+            <block type="run_task" id="YW:rK@HC/d1.^]BdO;*)" editable="false">
+                <field name="run_task_dropdown">4</field>
             </block>
         </statement>
     </block>
 </xml>
-    <div id="root"></div>
+<div id="root"></div>
 </body>
 </html>
