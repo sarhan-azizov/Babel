@@ -106,12 +106,12 @@ class BlocklyContainer extends Component {
             };
         }*/
 
-        /*document.addEventListener('click', (e) => {
+        document.addEventListener('click', (e) => {
             const selectTask = document.querySelector('.select-task');
             if (!selectTask.contains(e.target)) {
-                //this.handleCloseRunTask();
+                this.handleCloseRunTask();
             }
-        })*/
+        });
     }
 
     handleChange(e) {
@@ -208,7 +208,7 @@ class BlocklyContainer extends Component {
                     <form id="sed" onSubmit={this.handleRunTask}>
                     {(this.value === 1 || this.value === 2) &&
                         <div>
-                        Create User
+                            {this.value === 1 ? "Create User" : "Log In"}
                         <hr />
                         <div>Name: <input name="username" type="text"/></div>
                         <div>Password: <input name="userpassword" type="password"/></div>
