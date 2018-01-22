@@ -1,9 +1,9 @@
 import React from 'react';
 
-import { WithObjectAssign } from './test-components';
+import { LazyComponent } from './test-components';
 
 const App = () => (
-    <WithObjectAssign />
+    <LazyComponent />
 );
 
 

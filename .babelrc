@@ -8,5 +8,9 @@
       "debug": true,
       "useBuiltIns": "usage"
     }]
+  ],
+  "plugins": [
+    "@babel/syntax-dynamic-import",
+    "transform-class-properties"
   ]
 }
