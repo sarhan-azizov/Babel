@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 
-import { LazyComponent } from './test-components';
+import { LazyComponent, LazyComponentLodable } from './test-components';
 
 const App = () => (
-    <LazyComponent />
+    <Fragment>
+        <LazyComponent />
+        <br />
+        <LazyComponentLodable />
+    </Fragment>
 );
-
 
 export default App;

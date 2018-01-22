@@ -34,7 +34,7 @@ class LazyComponentContainer extends Component {
     };
 
     handleLazyLoadComponent = () => {
-        this.setState({ LazyComponent: asyncComponent(() => import('./component.lazy.js')) });
+        this.setState({ LazyComponent: asyncComponent(() => import('./component.js')) });
     };
 
     render() {
